@@ -1,0 +1,29 @@
+Pasos de ejecucion:
+
+Requesitos: MAMP/XAMP
+            Mysql
+            Laravel
+            Composer
+
+
+
+1. Creas una carpeta contenedora.
+2. Descargas clon en tu carpeta contenedora: git clon https://github.com/warne75/coding-challenge.
+3. Instalar paquetes/dependencias del proyecto: composer install
+4. Clonar el archivo .env.example en un nuevo fichero llamado .env que contiene las variables de entorno, entre ellas el acceso a la bbdd.
+   Para ello utilizar el siguiente comando: cp .env.example .env
+5. Crear BBDD en phpmyadmin de MAMP/XAMP y crear una bbdd por ejemplo: challenge
+6. Editar el fichero .env para fijar los datos de acceso a la BBDD:
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_DATABASE=challenge
+    DB_USERNAME=root
+    DB_PASSWORD=root
+   
+   
+5. Generar API_KEY  con el siguiente comando: php artisan key:generate
+6. Ahora ejecuta el servidor en localhost: php artisan serve
+7. control + c, para cancelar el servidor y ejecutar las creación de las tablas y rellenar las maestras:
+    php artisan migrate --seed
+
+
