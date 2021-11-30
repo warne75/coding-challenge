@@ -1,0 +1,12 @@
+Pasos para ejecutar la API:
+
+
+Es necesario probarlo con un gestor de API como Postman.
+
+
+Listado de productos:   http://127.0.0.1:8000/api/products/ con GET
+Listado de categorias:  http://127.0.0.1:8000/api/categories/ con GET
+Listado de un producto: http://127.0.0.1:8000/api/products/2 con GET
+Crear un producto:      http://127.0.0.1:8000/api/products/ con POST
+Actualizar producto:    http://127.0.0.1:8000/api/products/3 con PUT
+Borrar producto         http://127.0.0.1:8000/api/products/4 con DEL
